@@ -1,0 +1,5 @@
+# Written by Juan Carlos Moreno, 2022/03/01
+# Ignore the folder bin
+bin/
+# Ignore the folder Videos
+Videos/
