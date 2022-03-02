@@ -18,7 +18,7 @@ Chapter-2: 2-16.c 2-17a.c 2-17b.c 2-17c.c 2-18.c 2-19.c 2-20.c 2-21.c 2-22.c\
 	gcc -o ../bin/2-29 2-29.c
 	gcc -o ../bin/2-30 2-30.c
 	gcc -o ../bin/2-31 2-31.c
-	gcc -o ../bin/2-28 2-32.c
+	gcc -o ../bin/2-32 2-32.c
 
 .PHONY: clean
 clean:
