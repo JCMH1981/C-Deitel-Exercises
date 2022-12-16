@@ -36,29 +36,26 @@ int main(void)
     float sum_of_gallons = 0; /*Gallons used for all tankfuls*/
     float sum_of_miles = 0; /*Miles driven for all tankfuls*/
     float average; /*Overall average miles/gallon*/;
-        
-    while (1)
+
+    while (gallons != -1)
     {
         printf("Enter the gallons used (-1 to end): ");
         scanf("%f", &gallons);
-        
-        /*-1 to end. FIXME!*/
-        if (gallons == -1)
+
+        if (gallons != -1)
         {
-            break;
+            printf("Enter the miles driven: ");
+            scanf("%f", &miles);
+            printf("The miles / gallon for this tank was %f\n\n", miles/gallons);
+            sum_of_gallons += gallons;
+            sum_of_miles += miles;
         }
-        
-        printf("Enter the miles driven: ");
-        scanf("%f", &miles);
-        printf("The miles / gallon for this tank was %f\n\n", miles/gallons);
-        sum_of_gallons += gallons;
-        sum_of_miles += miles;		
     }
 
     if ((sum_of_gallons != 0) || (sum_of_miles != 0))
     {
         average = sum_of_miles/sum_of_gallons;
-        printf("The overall average miles/gallon was %f\n\n", average);
+        printf("\nThe overall average miles/gallon was %f\n", average);
     }
     else
     {
