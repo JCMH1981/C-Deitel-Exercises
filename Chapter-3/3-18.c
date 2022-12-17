@@ -52,37 +52,34 @@ int main(void)
     float credit_limit; /*Allowed credit limit*/
     float new_balance; /*New balance*/
 
-    while (1)
+    while (account_number != -1)
     {
         printf("Enter account number (-1 to end): ");
         scanf("%d", &account_number);
 
-        /*-1 to end. FIXME!*/
-        if (account_number == -1)
+        if (account_number != -1)
         {
-            break;
+            printf("Enter beginning balance: ");
+            scanf("%f", &beginning_balance);
+            printf("Enter total charges: ");
+            scanf("%f", &charges);
+            printf("Enter total credits: ");
+            scanf("%f", &credits);
+            printf("Enter credit limit: ");
+            scanf("%f", &credit_limit);
+
+            new_balance = beginning_balance + charges - credits;
+
+            if (new_balance > credit_limit)
+            {
+                printf("Account:\t%d\n", account_number);
+                printf("Credit limit:\t%.2f\n", credit_limit);
+                printf("Balance:\t%.2f\n", new_balance);
+                printf("Credit limit exceeded.\n");
+            }
+
+            printf("\n");
         }
-
-        printf("Enter beginning balance: ");
-        scanf("%f", &beginning_balance);
-        printf("Enter total charges: ");
-        scanf("%f", &charges);
-        printf("Enter total credits: ");
-        scanf("%f", &credits);
-        printf("Enter credit limit: ");
-        scanf("%f", &credit_limit);
-
-        new_balance = beginning_balance + charges - credits;
-
-        if (new_balance > credit_limit)
-        {
-            printf("Account:\t%d\n", account_number);
-            printf("Credit limit:\t%.2f\n", credit_limit);
-            printf("Balance:\t%.2f\n", new_balance);
-            printf("Credit limit Exceeded.\n");
-        }
-
-        printf("\n");
     }
 
     return 0;
