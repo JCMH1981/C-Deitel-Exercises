@@ -15,15 +15,15 @@ Written by Juan Carlos Moreno (jcmhsoftware@gmail.com), year 2018.*/
 
 int main(void)
 {
-	float radius;
-	float pi = 3.14159;
+    float radius;
+    float pi = 3.14159;
 
-	printf("Input the radius of the circle: ");
-	scanf("%f", &radius);
+    printf("Input the radius of the circle: ");
+    scanf("%f", &radius);
 
-	printf("Diameter of the circle is %f.\n", 2 * radius);
-	printf("Circumference of the circle is %f.\n", 2 * pi * radius);
-	printf("Area of the circle is %f.\n", pi * radius * radius);
+    printf("Diameter of the circle is %f.\n", 2 * radius);
+    printf("Circumference of the circle is %f.\n", 2 * pi * radius);
+    printf("Area of the circle is %f.\n", pi * radius * radius);
 
-	return 0;
+    return 0;
 }

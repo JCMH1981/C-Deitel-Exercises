@@ -1,7 +1,7 @@
 /* C How to Program, 6/E, Deitel & Deitel.
-   
+
 Solution of exercise 2.17a:
-(Printing Values with printf) Write a program that prints the numbers 1 to 4 
+(Printing Values with printf) Write a program that prints the numbers 1 to 4
 on the same line. Write the program using the following methods.
     c) Using four printf statements.
 

@@ -1,10 +1,10 @@
 /*C How to Program, 6/E, Deitel & Deitel.
-   
+
 Solution of exercise 3.35:
-(Palindrome Tester) A palindrome is a number or a text phrase that reads the 
-same backward as forward. For example, each of the following five-digit 
-integers is a palindrome: 12321, 55555, 45554 and 11611. Write a program that 
-reads in a five-digit integer and determines whether or not it's a palindrome. 
+(Palindrome Tester) A palindrome is a number or a text phrase that reads the
+same backward as forward. For example, each of the following five-digit
+integers is a palindrome: 12321, 55555, 45554 and 11611. Write a program that
+reads in a five-digit integer and determines whether or not it's a palindrome.
 [Hint: Use the division and remainder operators to separate the number
 into its individual digits.]
 
@@ -31,7 +31,7 @@ int main(void)
     fourth_remainder = third_remainder % 10;
     fifth_digit = fourth_remainder;
 
-    inverted_number = fifth_digit*10000 + fourth_digit*1000 + 
+    inverted_number = fifth_digit*10000 + fourth_digit*1000 +
                       third_digit*100 + second_digit*10 + first_digit;
 
     /*It tests whether or not the number is a palindrome*/

@@ -1,8 +1,8 @@
 /*C How to Program, 6/E, Deitel & Deitel.
 
-Solution of exercise 3.27: 
-(Find the Two Largest Numbers) Using an approach similar to Exercise 3.24, 
-find the two largest values of the 10 numbers. [Note: You may input each 
+Solution of exercise 3.27:
+(Find the Two Largest Numbers) Using an approach similar to Exercise 3.24,
+find the two largest values of the 10 numbers. [Note: You may input each
 number only once.]
 
 Written by Juan Carlos Moreno (jcmhsoftware@gmail.com), 2023-01-16.*/
@@ -18,11 +18,11 @@ int main(void)
 
     printf("Input the series of 10 numbers: ");
     counter = 1;
-    
+
     while (counter <= 10)
     {
         scanf("%d", &number);
-        
+
         if (number > first_largest)
         {
             second_largest = first_largest;
@@ -33,11 +33,11 @@ int main(void)
             second_largest = number;
         }
 
-        counter = counter + 1;        
+        counter = counter + 1;
     }
 
-    printf("The two largest numbers are %d and %d.\n", 
+    printf("The two largest numbers are %d and %d.\n",
            second_largest, first_largest);
-    
+
     return 0;
 }

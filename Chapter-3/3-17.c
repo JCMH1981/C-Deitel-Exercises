@@ -1,13 +1,13 @@
 /*C How to Program, 6/E, Deitel & Deitel.
-   
+
 Solution of exercise 3.17:
-(Gas Mileage) Drivers are concerned with the mileage obtained by their 
-automobiles. One driver has kept track of several tankfuls of gasoline by 
-recording miles driven and gallons used for each tankful. Develop a program 
-that will input the miles driven and gallons used for each tankful. The 
-program should calculate and display the miles per gallon obtained for each 
-tankful. After processing all input information, the program should calculate 
-and print the combined miles per gallon obtained for all tankfuls. Here is a 
+(Gas Mileage) Drivers are concerned with the mileage obtained by their
+automobiles. One driver has kept track of several tankfuls of gasoline by
+recording miles driven and gallons used for each tankful. Develop a program
+that will input the miles driven and gallons used for each tankful. The
+program should calculate and display the miles per gallon obtained for each
+tankful. After processing all input information, the program should calculate
+and print the combined miles per gallon obtained for all tankfuls. Here is a
 sample input/output dialog:
 
     Enter the gallons used (-1 to end): 12.8
