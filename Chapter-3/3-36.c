@@ -14,33 +14,31 @@ and so on. Thus the decimal number 234 can be interpreted as 4 * 1 + 3 * 10 +
 8 or 1 + 0 + 4 + 8 or 13.]
 
 Written by Juan Carlos Moreno (jcmhsoftware@gmail.com), 2023-01-20.
+Modified by Juan Carlos Moreno (jcmhsoftware@gmail.com), 2023-03-04.
 */
 
 #include <stdio.h>
 
 int main(void)
 {
-    int binary_number;
-    int decimal_equivalent;
-
-    int first_digit, second_digit, third_digit, fourth_digit;
-    int first_remainder, second_remainder, third_remainder;
+    int binary_number, digit, number, decimal_equivalent = 0;
+    int power_of_ten = 1000000000, power_of_two = 1024;
 
     printf("Input the binary integer (only 0s and 1s): ");
     scanf("%d", &binary_number);
+    number = binary_number;
 
-    first_digit = binary_number/1000;
-    first_remainder = binary_number%1000;
-    second_digit = first_remainder/100;
-    second_remainder = first_remainder%100;
-    third_digit = second_remainder/10;
-    third_remainder = second_remainder%10;
-    fourth_digit = third_remainder;
+    while ((power_of_ten >= 1) && (power_of_two >= 1))
+    {
+        digit = number / power_of_ten;
+        number = number % power_of_ten;
+        power_of_ten = power_of_ten / 10;
+        power_of_two = power_of_two / 2;
+        decimal_equivalent = decimal_equivalent + digit*power_of_two;
+    }
 
-    decimal_equivalent = first_digit*8 + second_digit*4 + third_digit*2 +
-                         fourth_digit;
-
-    printf("The decimal equivalent is %d.\n", decimal_equivalent);
+    printf("The decimal equivalent of binary %d is %d.\n",
+           binary_number, decimal_equivalent);
 
     return 0;
 }
