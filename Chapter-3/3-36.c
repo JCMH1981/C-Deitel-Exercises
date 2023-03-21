@@ -15,18 +15,20 @@ and so on. Thus the decimal number 234 can be interpreted as 4 * 1 + 3 * 10 +
 
 Written by Juan Carlos Moreno (jcmhsoftware@gmail.com), 2023-01-20.
 Modified by Juan Carlos Moreno (jcmhsoftware@gmail.com), 2023-03-04.
+Modified by Juan Carlos Moreno (jcmhsoftware@gmail.com), 2023-03-20.
 */
 
 #include <stdio.h>
 
 int main(void)
 {
-    int binary_number, digit, number, decimal_equivalent = 0;
+    int binary_integer, decimal_equivalent = 0;
+    int digit, number;
     int power_of_ten = 1000000000, power_of_two = 1024;
 
     printf("Input the binary integer (only 0s and 1s): ");
-    scanf("%d", &binary_number);
-    number = binary_number;
+    scanf("%d", &binary_integer);
+    number = binary_integer;
 
     while ((power_of_ten >= 1) && (power_of_two >= 1))
     {
@@ -38,7 +40,7 @@ int main(void)
     }
 
     printf("The decimal equivalent of binary %d is %d.\n",
-           binary_number, decimal_equivalent);
+           binary_integer, decimal_equivalent);
 
     return 0;
 }
